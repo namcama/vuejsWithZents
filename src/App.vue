@@ -2,21 +2,24 @@
   <div id="app">
     
     <!-- //<formlogin/> -->
-    <Unit01Ex1/>
+    <!-- <Unit01Ex1/> -->
+    <Unit01Ex2/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 //import formlogin from './components/formlogin.vue'
-import Unit01Ex1 from './components/Unit01Ex1.vue'
+//import Unit01Ex1 from './components/Unit01Ex1.vue'
+import Unit01Ex2 from './components/Unit01Ex2.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     //formlogin
-    Unit01Ex1,
+    //Unit01Ex1,
+    Unit01Ex2,
   }
 }
 </script>
