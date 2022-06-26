@@ -3,7 +3,8 @@
     
     <!-- //<formlogin/> -->
     <!-- <Unit01Ex1/> -->
-    <Unit01Ex2/>
+    <!-- <Unit01Ex2/> -->
+    <Unit01Ex3/>
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import HelloWorld from './components/HelloWorld.vue'
 //import formlogin from './components/formlogin.vue'
 //import Unit01Ex1 from './components/Unit01Ex1.vue'
-import Unit01Ex2 from './components/Unit01Ex2.vue'
+//import Unit01Ex2 from './components/Unit01Ex2.vue'
+import Unit01Ex3 from './components/Unit01Ex3.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     // HelloWorld,
     //formlogin
     //Unit01Ex1,
-    Unit01Ex2,
+    //Unit01Ex2,
+    Unit01Ex3,
   }
 }
 </script>
