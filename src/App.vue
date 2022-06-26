@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     
-    <formlogin/>
+    <!-- //<formlogin/> -->
+    <Unit01Ex1/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import formlogin from './components/formlogin.vue'
+//import formlogin from './components/formlogin.vue'
+import Unit01Ex1 from './components/Unit01Ex1.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    formlogin
+    //formlogin
+    Unit01Ex1,
   }
 }
 </script>
