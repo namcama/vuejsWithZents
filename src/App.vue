@@ -7,6 +7,7 @@
     <!-- <Unit01Ex3/> -->
     <testEX/>
     <Unit2Ex01/>
+    <Unit2Ex02/>
   </div>
 </template>
 
@@ -17,7 +18,9 @@
 //import Unit01Ex2 from './components/Unit01Ex2.vue'
 //import Unit01Ex3 from './components/Unit01Ex3.vue'
 //import testEX from './components/Unit02/testEx.vue'
-import Unit2Ex01 from './components/Unit02/Unit2Ex01'
+//import Unit2Ex01 from './components/Unit02/Unit2Ex01.vue'
+import Unit2Ex02 from './components/Unit02/Unit2Ex02.vue'
+
 
 export default {
   name: 'App',
@@ -28,7 +31,8 @@ export default {
     //Unit01Ex2,
     //Unit01Ex3,
     //testEX,
-    Unit2Ex01,
+    //Unit2Ex01,
+    Unit2Ex02,
   }
 }
 </script>
