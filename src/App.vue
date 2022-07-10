@@ -8,7 +8,8 @@
     <!-- <testEX/>
     <Unit2Ex01/>
     <Unit2Ex02/> -->
-    <Ex01Todo/>
+    <!-- <Ex01Todo/> -->
+    <ExercisE/>
   </div>
 </template>
 
@@ -21,7 +22,8 @@
 //import testEX from './components/Unit02/testEx.vue'
 //import Unit2Ex01 from './components/Unit02/Unit2Ex01.vue'
 //import Unit2Ex02 from './components/Unit02/Unit2Ex02.vue'
-import Ex01Todo from './components/Unit03/Ex01Todo.vue'
+//import Ex01Todo from './components/Unit03/Ex01Todo.vue'
+import ExercisE from './components/Unit03/ExercisE.vue'
 
 
 export default {
@@ -35,7 +37,8 @@ export default {
     //testEX,
     //Unit2Ex01,
     //Unit2Ex02,
-    Ex01Todo,
+    //Ex01Todo,
+    ExercisE
   }
 }
 </script>
