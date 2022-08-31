@@ -1,0 +1,338 @@
+.workflow-wrap {
+   overflow: auto;
+   position: relative;
+   height: 94vh;
+   display: flex;
+
+   .list-group {
+      margin-top: 20px;
+      padding: 0;
+
+      .draggable-transition {
+         display: flex;
+
+         .list-group-item {
+            .section {
+               width: 280px;
+               margin: 0 10px;
+               padding: 10px 5px;
+               background-color: #ebecf0;
+               border-radius: 5px;
+
+               .section-box-header {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 15px;
+
+                  .section-title {
+                     font-weight: bold;
+                     text-align: left;
+                     cursor: pointer;
+                     width: 75%;
+                     padding-left: 8px;
+                  }
+
+                  .section-action {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+
+                     .section-action-box {
+                        margin: 0 1px;
+                        border-radius: 5px;
+
+                        &:hover {
+                           background-color: white;
+                        }
+
+                        .section-action-icon {
+                           font-size: 16px;
+                           font-weight: bold;
+                           cursor: pointer;
+                           padding: 8px;
+                        }
+                     }
+                  }
+               }
+
+               .section-box-content-wrap {
+                  overflow: auto;
+                  max-height: 84vh;
+                  padding: 1px 3px 0 2px;
+
+                  .flag_new_card {
+                     margin-bottom: 10px;
+                     .other-new-card {
+                        background-color: white;
+                        box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+                        rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+                        border-radius: 5px;
+                     }
+                  }
+
+                  .animation_card_open {
+                     animation-name: crap-open;
+                     animation-duration: .4s;
+
+                     &:hover {
+                        cursor: auto;
+                        border: 1px solid white;
+                     }
+                  }
+
+                  @keyframes crap-open {
+                     from {
+                        height: 0;
+                     }
+                     to {
+                        height: 50px;
+                     }
+                  }
+
+                  .section-box-content {
+                     .content_task {
+                        background-color: white;
+                        text-align: left;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                        margin: 0 0 11px 0;
+
+                        &:hover {
+                           cursor: pointer;
+                           border: 1px solid #606266b5;
+                        }
+                        .el-image {
+                           width: 100%;
+                           border-top-left-radius: 5px;
+                           border-top-right-radius: 5px;
+                           height: 150px;
+
+                           &::v-deep .el-image__inner {
+                              object-fit: cover;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .card_detail_wrap {
+      position: absolute;
+      right: 0;
+      width: 35vw;
+      height: 94vh;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      opacity: 0;
+   }
+
+   .el-dialog__wrapper::v-deep .el-dialog {
+      border-radius: 10px;
+   }
+
+   .el-dialog__wrapper::v-deep .el-dialog .el-dialog__header {
+      display: none;
+   }
+}
+
+.task-info {
+   padding: 15px 20px;
+
+   .task-name {
+      font-size: 14px;
+   }
+
+   .tag-list {
+      width: 100%;
+      margin-top: 10px;
+
+      .tag-item {
+         border-radius: 7px;
+         padding: 3px 6px;
+         margin: 0 5px 6px 0;
+         display: inline-block;
+         text-transform: capitalize;
+         color: white;
+         font-size: 11px;
+         font-weight: bold;
+      }
+   }
+
+   .task-other-info {
+      //display: flex;
+      //justify-content: start;
+
+      .deadline {
+         padding-top: 10px;
+         width: 50%;
+         float: left;
+
+         .deadline-picker {
+            font-size: 13px;
+         }
+
+         .deadline-info {
+            font-size: 12px;
+            margin-left: 5px;
+         }
+      }
+
+      .todo-attach {
+         width: 50%;
+         text-align: right;
+         padding-top: 10px;
+         //display: flex;
+         align-items: end;
+         justify-content: end;
+         float: right;
+
+         .todo-attach-item {
+            font-size: 13px;
+
+            &:last-child {
+               margin-left: 15px;
+            }
+
+            .todo-attach-item-info {
+               font-size: 12px;
+               margin-left: 3px;
+            }
+         }
+      }
+   }
+}
+
+.other-new-work {
+   padding-top: 20px;
+
+   .add-new-list {
+      width: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      height: 40px;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+         color: rgb(21 27 38);
+         background-color: #ebecf0;
+         border-radius: 5px;
+      }
+
+      .add-card-icon {
+         margin-right: 3px;
+         font-weight: bold;
+      }
+   }
+
+   .allb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      height: 40px;
+      background-color: #ebecf0;
+      border-radius: 5px;
+
+      .box-scp {
+         width: 90%;
+      }
+   }
+}
+
+.inp-add-list {
+   -webkit-appearance: none;
+   background-color: #FFF;
+   background-image: none;
+   border-radius: 4px;
+   border: 1px solid #DCDFE6;
+   box-sizing: border-box;
+   color: #606266;
+   display: inline-block;
+   height: 40px;
+   line-height: 40px;
+   outline: 0;
+   padding: 0 15px;
+   transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+   width: 100%;
+   font-size: 14px;
+
+   &:focus {
+      border-color: #409EFF;
+      outline: 0;
+   }
+
+   &::placeholder {
+      color: #606266b5;
+   }
+}
+
+.box-scp {
+   position: relative;
+
+   input {
+      width: 100%;
+      color: black;
+      font-size: 14px;
+      background-color: transparent;
+      border: 2px solid transparent;
+      border-bottom-color: hsla(185, 100%, 62%, 0.2);
+
+
+      &:focus {
+         outline: none;
+      }
+
+      &::placeholder {
+         color: #606266b5;
+      }
+
+      &:focus ~ span {
+         transform-origin: bottom left;
+         transform: scaleX(1);
+      }
+   }
+
+   .css-rename {
+      font-weight: bold;
+      padding: 0 5px 5px 0;
+
+      &::placeholder {
+         font-weight: normal;
+      }
+   }
+
+   span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #3cefff;
+      transform-origin: bottom right;
+      transform: scaleX(0);
+      transition: transform 1s ease;
+   }
+}
+
+.el-popper::v-deep.el-popover{
+   padding: 0;
+}
+
+::-webkit-scrollbar {
+   width: 5px;
+   height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: gray;
+   border-radius: 5px;
+}

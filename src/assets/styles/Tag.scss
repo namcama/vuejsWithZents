@@ -1,0 +1,110 @@
+.tag-container {
+   margin-bottom: 10px;
+   .tag-title {
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(192, 196, 204, 0.74);
+      margin-bottom: 15px;
+   }
+
+   .tag-color-box {
+      max-height: 295px;
+      overflow: auto;
+
+      .tag-color {
+         display: flex;
+         align-items: center;
+         margin-bottom: 5px;
+         justify-content: space-between;
+
+         .el-checkbox-button {
+            width: 90%;
+         }
+
+         .el-checkbox-button.is-checked::v-deep .el-checkbox-button__inner {
+            color: black;
+            background: unset;
+
+            .color-box {
+               .color-item {
+                  .ico-ocp {
+                     display: inline-block;
+                  }
+               }
+            }
+         }
+         .el-checkbox-button::v-deep .el-checkbox-button__inner {
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            border: none;
+
+            .color-box {
+               display: flex;
+               align-items: center;
+
+               .color-item {
+                  text-align: left;
+                  width: 100%;
+                  padding: 9px 15px;
+                  border-radius: 5px;
+                  color: white;
+                  position: relative;
+
+                  .ico-ocp {
+                     position: absolute;
+                     right: 10px;
+                     display: none;
+                  }
+               }
+            }
+         }
+
+         .ico-oop {
+            font-size: 16px;
+            margin: 0 3px 0 10px;
+            cursor: pointer;
+
+            &:hover {
+               color: #409EFF;
+            }
+         }
+      }
+   }
+
+   .new-tag-wrap {
+      margin-top: 40px;
+
+      .new-children {
+         margin-top: 10px;
+
+         .tag-content {
+            display: flex;
+            align-items: center;
+
+            .el-input {
+               margin-right: 15px;
+            }
+         }
+
+         .action-new-tag {
+            display: block;
+            margin-top: 10px;
+         }
+      }
+   }
+}
+
+.float-right {
+   float: right;
+}
+
+::-webkit-scrollbar {
+   width: 5px;
+   height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: gray;
+   border-radius: 5px;
+}

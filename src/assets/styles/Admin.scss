@@ -1,0 +1,61 @@
+.container {
+    .header {
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #151b26;
+        padding: 0 15px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+
+            i {
+                font-size: 30px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            span {
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .user {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .content {
+        //background-color: #f6f8f9;
+        background: url("../assets/images/bg-wfl.jpg");
+        background-size: cover;
+    }
+}
+
+.el-dropdown-menu {
+    padding: 0;
+    .el-dropdown-menu__item {
+        width: 150px;
+        padding: 0;
+
+        .item-mng {
+            padding: 0 15px;
+        }
+    }
+}
